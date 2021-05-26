@@ -10,7 +10,7 @@ public class Razlomak {
     }
 
 
-        //služi za ispis rjesenja u stringu
+        //ispis rjesenja u stringu
         public String toString() {
         return this.brojnik + "/" + this.nazivnik;
         }
@@ -33,11 +33,11 @@ public class Razlomak {
         this.nazivnik = nazivnik;
     }
 
-    //Mnozenje razlomaka. argument metode je referenca na objekt
+    //Mnozenje razlomaka. argument metode je referenca na objekt (objekt kao parametar)
     public Razlomak mnozenjerazlomaka(Razlomak razlomak2) {
         int novibrojnik = brojnik * razlomak2.brojnik;
         int novinazivnik = nazivnik * razlomak2.nazivnik;
-        Razlomak rjesenje = new Razlomak(novibrojnik, novinazivnik);
+        Razlomak rjesenje = new Razlomak(novibrojnik, novinazivnik); //kreiramo novi objekt
         return rjesenje; // vracamo referencu na novi objekt
     }
 
